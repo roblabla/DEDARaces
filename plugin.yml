@@ -1,0 +1,49 @@
+name: DEDARaces
+main: com.al_fe.main
+version: 0.01
+
+commands:
+   dedaraces version:
+      description: Check the version of the plugin.
+      usage: /<command>
+      permission: dedaraces.version
+      permission-message: You don't have permission.
+      aliases: dr version, drv, drversion, dedaracesversion,
+
+permissions:
+    dedaraces.*:
+        description: Gives access to all dedarace commands
+        children:
+            dedarace.version: true
+    dedaraces.version:
+        description: Gives access to /dedarace version
+        default: op
+    dedaraces.cof.*:
+        description: Gives access to all cof abilities
+        children:
+            dedarace.cof.fireimmune: true
+            dedaraces.cof.waterdamage: true
+    dedaraces.cof.fireimmune:
+        description: Makes you immune to fire.
+        default: op
+    dedaraces.cof.waterdamage:
+        description: Makes you take damage from fire.
+        default: op
+    dedaraces.cow.*:
+        description: Gives access to all cow abilities
+        children:
+            dedaraces.cow.nodrain: true
+            dedaraces.cow.waterspeed: true
+    dedaraces.cow.nodrain:
+        description: The player wont drown.
+        default: op
+    dedaraces.cow.waterspeed:
+        description: Gives you normal speed underwater.
+        default: op
+    dedaraces.all.*:
+        description: Gives access to all cow abilities
+        children:
+            dedaraces.all.usepotions: true
+    dedaraces.all.denypotions:
+        description: Denies users the capability to use potions
+        default: op
