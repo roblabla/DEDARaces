@@ -33,4 +33,4 @@ Changelog:
 
 Version 0.1:
 
-    Release (Release (I released it but it might contain silly bugs, so please file a ticket)
+    Release (I released it but it might contain silly bugs, so please file a ticket)
